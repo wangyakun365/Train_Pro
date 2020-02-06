@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+
+<!-- 系统默认配置 -->>
+<default-config>
+<property name="user">root</property>
+<property name="password"></property>
+<property name="driverClass">com.mysql.jdbc.Driver</property>
+<property name="jdbcUrl">jdbc:mysql://localhost:3306/libment</property>
+
+
+<!-- 初始化连接认配置，可选的 -->>
+<property name="initialPoolSize">10</property><!-- 初始连接数 -->>
+<property name="maxPoolSize">100</property><!-- 最大连接数 -->>
+<property name="minPoolSize">5</property><!--最小连接数-->>
+<property name="checkoutTimeout">3000</property><!--最大响应时间 -->>
+
+</default-config>
+
+
+
+
+
+<!-- 自定义配置 -->>
+<name-config name="wangyakun">
+
+<property name="user">root</property>
+<property name="password"></property>
+<property name="driverClass">com.mysql.jdbc.Driver</property>
+<property name="jdbcUrl">jdbc:mysql://localhost:3306/libment</property>
+
+</name-config>
+
+
+
+</c3p0-config>
